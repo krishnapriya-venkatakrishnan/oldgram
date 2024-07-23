@@ -1,0 +1,112 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: "Source Sans 3", sans-serif;
+}
+
+.nav {
+    width: 375px;
+    border-bottom: 1px solid gray;
+    display: flex;
+    justify-content: space-between;
+    margin: 0px auto;
+    padding: 10px 0px;
+}
+
+.logo {
+    height: 33px;
+    margin-left: 15px;
+}
+
+.user-avatar {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+section {
+    width: 375px;
+    margin: 0px auto;    
+}
+
+.post-owner {
+    display: flex;
+    padding: 10px;
+}
+
+.post-owner-avatar {
+    height: 34px;
+    border-radius: 50%;
+}
+
+.post-owner-id-location {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+    justify-content: center;
+}
+
+.post-owner-name, .post-owner-id {
+    font-weight: bold;
+}
+
+.post-img {
+    width: 375px;
+    height: 375px;
+    position: relative;
+    display: inline-block;
+}
+
+.post {
+    width: 375px;
+    height: 375px;
+}
+
+.heart-animation {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-image: url("./images/heart-image.svg"); 
+    width: 50px; /* Adjust size as needed */
+    height: 50px; /* Maintain aspect ratio */
+    background-size: cover;
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+
+.post-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.post-icons {
+    display: flex;
+    padding: 10px;
+}
+
+.post-like, .post-comment, .post-dm {
+    width: 23px;
+    height: 23px;
+    margin-right: 10px;
+}
+
+.post-comment {
+    margin-right: 5px;
+}
+
+.post-no-of-likes {
+    padding: 0px 10px;
+    font-weight: bold;
+}
+
+.post-details {
+    padding: 10px;
+}
+
+.post-owner-id {
+    margin-right: 10px;
+    float: left;
+}
